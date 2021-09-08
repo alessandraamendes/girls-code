@@ -1,0 +1,87 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+
+    }
+
+
+    calculaImc(1.71, 73);
+    calculaImc(1.72, 68);
+</script>
+
+<script>
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+
+    }
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc(1.72, 68);
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48)); // mais uma forma de mostrar o valor
+
+    mostra(imcFlavio);
+    mostra(imcAmigo);
+</script>
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+
+    }
+
+
+    calculaImc(1.71, 73);
+    calculaImc(1.72, 68);
+</script>
+
+<script>
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+
+    }
+
+    var nome = prompt("Informe o seu nome");
+    var alturaInformada = prompt(nome + ", informe sua altura");
+    var pesoInformado = prompt(nome + ", informe seu peso");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    document.write(nome + ", o seu IMC é " + imc);
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroInicial = 29;
+    
+    while (numeroInicial < 40) {
+        numeroInicial = numeroInicial + 1;
+        if (numeroInicial != 33 && numeroInicial != 37) {
+            mostra(numeroInicial);
+        }
+    }
+
+    mostra("FIM");
+</script>
